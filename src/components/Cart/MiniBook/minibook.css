@@ -1,0 +1,45 @@
+.miniBook{
+    display: flex;
+}
+
+.miniBook .bookBox__img{
+    display: block;
+    width: 50px;
+    height: 68px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.miniBook .bookBox__img img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.miniBook .bookBox__content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.miniBook .bookBox__content > h3{
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.miniBook .bookBox__content > p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #636363;
+}
+
+.miniBook .bookBox__content > .price{
+    font-weight: 900;
+    font-size: 16px;
+    color: #7F00FF;
+}

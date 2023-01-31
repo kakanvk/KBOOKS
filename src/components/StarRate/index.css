@@ -1,0 +1,16 @@
+.StarRate{
+    display: flex;
+    column-gap: 7px;
+}
+
+.StarRate ion-icon{
+    font-size: 13px;
+}
+
+.star__fill{
+    color: #ff7b00;
+}
+
+.star__noFill > ion-icon{
+    color: #bebebe;
+}

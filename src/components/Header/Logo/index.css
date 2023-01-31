@@ -1,0 +1,19 @@
+.header .header__logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.header .header__logo .logoIcon{
+    display: block;
+    width: 30px;   
+    margin-right: 15px;
+}
+
+.header .header__logo .logoText{
+    display: block;
+    height: 15px;   
+}
+

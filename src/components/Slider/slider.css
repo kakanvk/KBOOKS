@@ -1,0 +1,11 @@
+.slider{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slider img{
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,51 @@
+.MiniBookBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 20px 35px 20px 25px;
+    width: 100%;
+}
+
+.MiniBookBox > .MiniBookBox__left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 15px;
+    width: 55%;
+}
+
+.MiniBookBox > .MiniBookBox__left > input{
+    accent-color: #7F00FF;
+    height: 15px;
+    width: 15px;
+}
+
+.MiniBookBox > .MiniBookBox__right > span{ 
+    font-weight: 900;
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+}
+
+.MiniBookBox > .MiniBookBox__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+    max-width: 450px;
+}
+
+.MiniBookBox__right--btnDlt{
+    display: block;
+}
+
+.MiniBookBox > .MiniBookBox__right > .MiniBookBox__right--btnDlt > ion-icon{
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}

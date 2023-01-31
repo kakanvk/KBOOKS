@@ -1,0 +1,117 @@
+.BookDetail__mainBox{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 30px 35px;
+    background-color: #F2F2F2;
+    position: relative;
+}
+
+.BookDetail__mainBox__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 210px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #b4b4b4;
+}
+
+.BookDetail__mainBox__left > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.BookDetail__mainBox__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 160px);
+    row-gap: 8px;
+}
+
+.mainBox__right__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 2px;
+}
+
+.mainBox__right__info > a{
+    display: flex;
+    text-decoration: none;
+    color: #7F00FF;
+    font-weight: 500;
+}
+
+.mainBox__right__info > span{
+    color: black;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.mainBox__right__price{
+    display: flex;
+    column-gap: 10px;
+    align-items: baseline;
+}
+
+.mainBox__right__price>:first-child{
+    color: #7F00FF;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.mainBox__right__price>:last-child{
+    font-size: 16px;
+    color: #b1b1b1;
+    font-weight: 400;
+    text-decoration-line: line-through;
+}
+
+.mainBox__right__count{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.mainBox__right__count>:first-child{
+    font-weight: 500;
+}
+
+.mainBox__right__btn{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 5px;
+}
+
+.BookDetail__mainBox__likeButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 20px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: #D9D9D9;
+}
+
+.BookDetail__mainBox__likeButton > ion-icon{
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+.BookDetail__mainBox__likeButton{
+    cursor: pointer;
+}
+
+.BookDetail__mainBox__likeButton__active{
+    color: #7F00FF;
+}

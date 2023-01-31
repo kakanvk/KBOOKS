@@ -1,0 +1,12 @@
+.quickIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    column-gap: 25px;
+}
+
+.quickIcon *{
+    font-size: 20px;
+    color: black;
+}

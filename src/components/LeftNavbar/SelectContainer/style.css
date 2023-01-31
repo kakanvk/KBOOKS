@@ -1,0 +1,16 @@
+.selectContainer h1{
+    font-family: 'Quicksand', sans-serif;
+    color: #ADADAD;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.selectContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 30px;
+}

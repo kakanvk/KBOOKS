@@ -1,0 +1,39 @@
+.title__1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 70px 0 30px 0;
+}
+
+.title__1 > h3{
+    font-size: 22px;
+}
+
+.title__1 > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #636363;
+    transition: ease-in-out 0.1s;
+    text-decoration: none;
+}
+
+.title__1 > a > span{
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.title__1 > a:hover{
+    color: #7F00FF;
+    cursor: pointer;
+}
+
+.container__book{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}

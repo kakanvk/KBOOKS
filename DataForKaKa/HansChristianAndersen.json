@@ -1,0 +1,35 @@
+[
+    {
+        "linkBookCover": "https://isach.info/images/story/cover/nang_tien_ca__hans_christian_andersen.jpg",
+        "bookName": "Nàng tiên cá",
+        "authorName": "Hans Christian Andersen",
+        "newPrice": 0,
+        "oldPrice": 95000,
+        "star": 0,
+        "description": "Câu chuyện giàu tính nhân văn của Andersen, kể về một tình yêu buồn nhưng cao đẹp của nàng tiên cá mang lòng thầm yêu chàng hoàng tử. Tình yêu ấy mãnh liệt đến mức nàng sẵn sàng từ bỏ cuộc sống quen thuộc dưới đáy và đánh đổi giọng nói của mình để có được đôi chân như con người. Cuối cùng, nàng thà chịu sự hi sinh thầm lặng chứ không nỡ làm tổn thương đến người mình yêu.",
+        "releaseDate": "2016",
+        "category": "Cổ tích"
+    },
+    {
+        "linkBookCover": "https://www.nxbtre.com.vn/Images/Book/nxbtre_full_16152018_041521.jpg",
+        "bookName": "Bà chúa tuyết",
+        "authorName": "Hans Christian Andersen",
+        "newPrice": 0,
+        "oldPrice": 47000,
+        "star": 0,
+        "description": "Bà chúa Tuyết. Câu chuyện kể cuộc phiêu lưu của cô bé Giéc Đa nhất quyết đi tìm người bạn của mình là Kay. Với tấm lòng trong sáng và trái tim nhân hậu, Giéc Đa đã liên tục nhận được sự giúp đỡ và cuối cùng đã tìm được Kay trong lâu đài của bà chúa Tuyết, giải thoát cho bạn mình khỏi lời nguyền giam giữ.",
+        "releaseDate": "2014",
+        "category": "Cổ tích"
+    },
+    {
+        "linkBookCover": "https://salt.tikicdn.com/cache/w1200/media/catalog/product/m/k/mk_16ccotich_03.jpg",
+        "bookName": "Chú lính chì dũng cảm",
+        "authorName": "Hans Christian Anderse",
+        "newPrice": 0,
+        "oldPrice": 78000,
+        "star": 0,
+        "description": "Thay vì chỉ biết ngồi than vãn với những nỗi bất hạnh trong cuộc sống, hãy dũng cảm đối mặt với chúng một cách hiên ngang như chú lính chì trong câu chuyện. Sau khi giông bão qua đi, chúng ta sẽ tìm thấy hạnh phúc.",
+        "releaseDate": "2018",
+        "category": "Cổ tích"
+    }
+]

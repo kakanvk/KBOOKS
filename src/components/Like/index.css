@@ -1,0 +1,39 @@
+.likebox_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 30px;
+}
+
+.likebox_container .container__book__label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 15px 0 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ADADAD;
+}
+
+.likebox_container .container__book__label .MiniBookBox__left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 80px;
+    width: 55%;
+}
+
+.likebox_container .container__book__label .MiniBookBox__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+    max-width: 265px;
+    padding: 0 7px 0 9px;
+}

@@ -1,0 +1,68 @@
+[
+    {
+        "linkBookCover": "https://salt.tikicdn.com/cache/750x750/ts/product/87/73/ff/ed5aac24f977c198f9a9e3588f4b178b.jpg.webp",
+        "bookName": "Mình Nói Gì Khi Nói Về Hạnh Phúc",
+        "authorName": "Rosie Nguyễn",
+        "newPrice": 48000,
+        "oldPrice": 75000,
+        "star": 4.5,
+        "description": "Hạnh phúc khi thấy mình được sinh ra. Được trải qua tất cả những vui buồn sướng khổ. Được tư duy và chiêm nghiệm. Ngẫm ra, được làm người đã là hạnh phúc lắm rồi, có cần điều gì khác nữa đâu.",
+        "releaseDate": "01/07/2022",
+        "category": "Kỹ năng sống"
+    },
+    { 
+        "linkBookCover": "https://salt.tikicdn.com/cache/750x750/ts/product/83/30/87/737846efdb9f28f0f51352cacf9225c5.jpg.webp",
+        "bookName": "Nhà Giả Kim",
+        "authorName": "Paulo Coelho",
+        "newPrice": 69000,
+       "oldPrice": 99000,
+        "star": 5,
+        "description": "Tất cả những trải nghiệm trong chuyến phiêu du theo đuổi vận mệnh của mình đã giúp Santiago thấu hiểu được ý nghĩa sâu xa nhất của hạnh phúc, hòa hợp với vũ trụ và con người.",
+        "releaseDate": "30/10/2013",
+        "category": "Tiểu thuyết"
+    },
+    { 
+        "linkBookCover": "https://salt.tikicdn.com/cache/750x750/ts/product/56/ce/23/64b2eaa5b859d8ba1412f1b350c3e128.jpg.webp",
+        "bookName": "Tuổi trẻ đáng giá bao nhiêu",
+        "authorName": "Rosie Nguyễn",
+        "newPrice": 58000,
+       "oldPrice": 99000,
+        "star": 5,
+        "description": "Tuổi trẻ đáng giá bao nhiêu là cuốn sách không nặng nề giáo điều, không chỉ trích cực đoan, đơn giản chỉ là những tâm sự bình dị của người đi trước, Rosie Nguyễn mang đến cho bạn trẻ những tư tưởng tích cực nhất để mạnh mẽ bước chân vào đời.",
+        "releaseDate": "2016",
+        "category": "Tài liệu tham khảo"
+    },
+    {
+        "linkBookCover": "https://upload.wikimedia.org/wikipedia/vi/c/c9/Cho_t%C3%B4i_xin_m%E1%BB%99t_v%C3%A9_%C4%91i_tu%E1%BB%95i_th%C6%A1.jpg",
+        "bookName": "Cho tôi xin một vé đi tuổi thơ",
+        "authorName": "Nguyễn Nhật Ánh",
+        "newPrice": 0,
+        "oldPrice": 55000,
+        "star": 0,
+        "description": "Nhà văn mời người đọc lên chuyến tàu quay ngược trở lại thăm tuổi thơ và tình bạn dễ thương của 4 bạn nhỏ. Những trò chơi dễ thương thời bé, tính cách thật thà, thẳng thắn một cách thông minh và dại dột, những ước mơ tự do trong lòng… khiến cuốn sách có thể làm các bậc phụ huynh lo lắng rồi thở phào.",
+        "releaseDate": "2008",
+        "category": "Tuổi teen - Tuổi mới lớn"
+    },
+    {
+        "linkBookCover": "https://cdn.khosachonline.com/uploads/2020/01/930/mat-biec.jpg",
+        "bookName": "Mắc biếc",
+        "authorName": "Nguyễn Nhật Ánh",
+        "newPrice": 0,
+        "oldPrice": 88000,
+        "star": 0,
+        "description": "Ngạn- một chàng trai sống nội tâm, si tinh và cô bạn Hà Lan có đôi mắt đẹp lạ thường. Họ cùng nhau lớn lên trong một ngôi làng nghèo nàn nơi thôn quê nhưng ngập tràn những kỉ niệm tuổi thơ tươi đẹp. Nhưng khi lớn lên ... họ ngược hướng.",
+        "releaseDate": "1990",
+        "category": "Tuổi teen - Tuổi mới lớn"
+    },
+    {
+        "linkBookCover": "https://cdn.khosachonline.com/uploads/2020/01/672/37879117994-08c291cb4a-o.jpg",
+        "bookName": "Ngồi khóc trên cây",
+        "authorName": "Nguyễn Nhật Ánh",
+        "newPrice": 0,
+        "oldPrice": 52000,
+        "star": 0,
+        "description": "Cuộc sống trong một ngôi làng thơ mộng ven sông, kỳ nghỉ hè với nhân vật là những đứa trẻ mới lớn có vô vàn trò chơi đơn sơ hấp dẫn ghi dấu mãi trong lòng.",
+        "releaseDate": "2013",
+        "category": "Tuổi teen - Tuổi mới lớn"
+    }
+]

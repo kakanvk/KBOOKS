@@ -1,0 +1,41 @@
+.likebox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 20px 40px 20px 25px;
+    width: 100%;
+}
+
+.likebox .likebox__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+    max-width: 300px;
+}
+
+.likebox .likebox__right >:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+}
+
+.likebox .likebox__right > div > .success{
+    color:rgb(0, 132, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+    font-weight: 500;
+}
+
+.likebox__right__btnDlt{
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}

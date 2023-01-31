@@ -1,0 +1,7 @@
+.content{
+    width: calc(100vw - 280px);
+    overflow: auto;
+    display: block;
+    /* padding: 30px 50px; */
+    /* background-color: blanchedalmond; */
+}

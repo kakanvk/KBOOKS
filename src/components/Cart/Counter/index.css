@@ -1,0 +1,17 @@
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 90px;
+    padding: 4px 8px;
+    column-gap: 15px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.counter ion-icon{
+    cursor: pointer;
+}

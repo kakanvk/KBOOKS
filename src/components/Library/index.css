@@ -1,0 +1,13 @@
+.container_book_library{
+    margin-top: 20px;
+}
+
+.FilterNotFound{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: red;
+    padding-left: 10px;
+}

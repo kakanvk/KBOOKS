@@ -1,0 +1,29 @@
+.DetailBoxBook{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 25px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 320px;
+}
+
+.DetailBoxBook .detail__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 4px;
+}
+
+.DetailBoxBook > div > span{
+    font-size: 15px;
+    color: #636363;
+    font-weight: 500;
+}
+
+.DetailBoxBook > div > a{
+    text-decoration: none;
+    color: #7F00FF;
+    font-size: 15px;
+    font-weight: 500;
+}

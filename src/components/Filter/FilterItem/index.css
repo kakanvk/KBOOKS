@@ -1,0 +1,27 @@
+.filter-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 32px;
+    max-width: 200px;
+    padding: 0px 14px 0 17px;
+    border: 1px solid black;
+    font-family: "quicksand";
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    column-gap: 8px;
+}
+
+.filter-item > span{
+    width: calc(100% - 16px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.filter-item > ion-icon {
+    font-size: 16px;
+    cursor: pointer;
+}

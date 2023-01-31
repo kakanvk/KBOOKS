@@ -1,0 +1,19 @@
+.searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.searchBox ion-icon{
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.searchBox input{
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    width: 100%;
+}

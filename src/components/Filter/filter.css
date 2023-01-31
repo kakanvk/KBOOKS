@@ -1,0 +1,31 @@
+.filterContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.btn-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 32px;
+    padding: 0px 18px;
+    border: none;
+    background: linear-gradient(84.05deg, #7F00FF 4.99%, #E100FF 128.08%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+    font-family: "quicksand";
+    font-weight: 600;
+    color: white;
+    column-gap: 8px;
+    cursor: pointer;
+}
+
+.btn-filter > img {
+    display: block;
+    width: 15px;
+}

@@ -1,0 +1,41 @@
+.leftNavbar{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    overflow: auto;
+    padding-top: 20px;
+}
+
+.selectItem{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    
+    border-radius: 50px;
+    margin: 7px 0px;
+    font-weight: bold;
+}
+
+.selectItem:hover{
+    background-color: #E5E5E5;
+}
+
+.selectItem > a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 12px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.selectItem ion-icon{
+    margin-right: 13px;
+    font-size: 16px;
+}
+
+.active{
+    background-color: #E5E5E5;
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    color: black;
+}   
+
+.btn-fill{
+    background: linear-gradient(76.73deg, #7F00FF -14.37%, #E100FF 125.55%);
+    border: none;
+    color: white;
+}
+
+.btn:hover{
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+.btn > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+}

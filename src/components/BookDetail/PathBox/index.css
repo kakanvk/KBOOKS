@@ -1,0 +1,17 @@
+.PathBox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 5px;
+    margin-bottom: 40px;
+}
+
+.PathBox > a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #7F00FF;
+}
+
+.PathBox > ion-icon{
+    font-size: 14px;
+}

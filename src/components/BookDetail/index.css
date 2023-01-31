@@ -1,0 +1,24 @@
+.authorDetail h2{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.Rate__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.authorDetail__content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.authorDetail__content__left{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 340px);
+    row-gap: 50px;
+}

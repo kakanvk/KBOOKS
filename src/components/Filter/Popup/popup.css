@@ -1,0 +1,75 @@
+.popupFilter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 199;
+    transition: 0.3s;
+}
+
+.overplay{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 198;
+}
+
+.popupFilter .popupFilter_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 10px;
+    width: 330px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+    z-index: 199;
+}
+
+.popupFilter_box .popupFilter_box__option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.popupFilter_box .popupFilter_box__option .popupFilter_box__option__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #E6E6E6;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.popupFilter_box .popupFilter_box__option .popupFilter_box__option__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.popupFilter_box .popupFilter_box__option .popupFilter_box__option__left > img {
+    display: block;
+    width: 22px;
+}
+
+.popupFilter .popupFilter_box > h2{
+    background-image: linear-gradient(76.73deg, #7F00FF -14.37%, #E100FF 125.55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
