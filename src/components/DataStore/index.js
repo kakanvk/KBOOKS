@@ -35,12 +35,12 @@ function DataStore({children}) {
 
     const getBookById = (id) => {
         return (
-            dataBooks.find((item) => item.id===id)
+            dataBooks.find((item) => item.id === id)
         )
     }
 
     const isInCart = (id) => {
-        const book = cart.find((item) => item === id)
+        const book = cart.find((item) => item.id === id)
         return book ? true : false;
     }
 

@@ -14,7 +14,10 @@ function MainBox(props) {
 
     const handleAddToCart = (id) => {
         const newCart = [
-            id,
+            {
+                id,
+                counter: 1
+            },
             ...DataStore.cart
         ]
 

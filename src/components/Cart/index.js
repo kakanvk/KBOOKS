@@ -15,7 +15,7 @@ function Cart() {
     })
 
     const deleteCartById = (id) => {
-        const newcart = DataStore.cart.filter(item => item !== id);
+        const newcart = DataStore.cart.filter(item => item.id !== id);
         DataStore.setCart(newcart);
     }
 
@@ -40,8 +40,8 @@ function Cart() {
                     </div>
                     {
                         DataStore.cart.length !== 0 ?
-                        DataStore.cart.map((bookId, index) => {
-                            const book = DataStore.getBookById(bookId);
+                        DataStore.cart.map((item, index) => {
+                            const book = DataStore.getBookById(item.id);
                             return(
                                 <MiniBookBox key={index} data={book} deleteCartById={deleteCartById}/>
                             )

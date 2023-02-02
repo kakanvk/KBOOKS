@@ -20,7 +20,7 @@ function Content() {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/library" element={<DataProviderOfLibrary><ContainerLibrary/></DataProviderOfLibrary>}>
                     <Route index element={<Library/>}/>
-                    <Route path=':bookId' element={<BookDetail bookId=':bookId'/>}/>
+                    <Route path=':bookId' element={<BookDetail/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Route>
                 <Route path="/author" element={<DataProviderOfLibrary><Author/></DataProviderOfLibrary>}/>
