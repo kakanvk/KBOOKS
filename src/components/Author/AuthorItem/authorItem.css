@@ -1,4 +1,9 @@
 .authorItem{
+    width: 100%;
+    position: relative;
+}
+
+.authorItem > a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -7,7 +12,7 @@
     border-radius: 10px;
     background: #F2F2F2;
     padding: 20px 25px;
-    position: relative;
+    text-decoration: none;
 }
 
 .authorItem__img{
@@ -36,6 +41,7 @@
 .authorItem__content > h2{
     font-size: 20px;
     font-weight: 700;
+    color: black;
 }
 
 .authorItem__content > div{

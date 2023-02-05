@@ -1,0 +1,25 @@
+.Transport{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 30px;
+    row-gap: 7px;
+}
+
+.Transport__label{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.Transport__label > h3{
+    font-size: 18px;
+}
+
+.Transport__label > span{
+    font-size: 14px;
+    color: #7F00FF;
+    font-weight: 500;
+}

@@ -1,0 +1,38 @@
+.Order{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container__order{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    row-gap: 25px;
+}
+
+.container__order__label{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600; 
+    padding: 0 30px;
+}
+
+.container__order__content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.order__label__date, .order__label__toMoney, .order__label__stt {
+    display: flex;
+    min-width: 110px;
+    align-items: center;
+    justify-content: center;
+}
+
+.order__label__order{
+    display: flex;
+    width: 40%;
+}

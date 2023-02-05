@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "./index.css"
 
-function Counter() {
-    const [amount, setAmount] = useState(1);
+function Counter(props) {
+
+    const { initValue } = props;
+    
+    const [amount, setAmount] = useState(initValue ? initValue : 1);
 
     const handleRemove = () => {
         if(amount > 1)
@@ -11,7 +14,7 @@ function Counter() {
     
     return (
         <div className="counter">
-            <ion-icon name="remove-outline" onClick={handleRemove}></ion-icon>
+            <ion-icon name="remove-outline" onClick={() => handleRemove()}></ion-icon>
             <span>{amount}</span>
             <ion-icon name="add-outline" onClick={() => setAmount(amount + 1)}></ion-icon>
         </div>

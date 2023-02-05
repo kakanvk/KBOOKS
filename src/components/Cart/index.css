@@ -140,7 +140,7 @@
     color: #7F00FF;
 }
 
-.container__content__2 .cart__pay .cart__pay__right > button{
+.container__content__2 .cart__pay .cart__pay__right > a{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,4 +155,5 @@
     color: white;
     font-family: "quicksand";
     column-gap: 10px;
+    text-decoration: none;
 }

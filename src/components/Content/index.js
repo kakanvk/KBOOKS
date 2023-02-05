@@ -12,6 +12,9 @@ import AuthorDetail from "../AuthorDetail";
 import { DataProviderOfLibrary } from "../Library/DataContextOfLibrary";
 import BookDetail from "../BookDetail";
 import ContainerLibrary from "../ContainerLibrary";
+import ContainerAuthor from "../ContainerAuthor";
+import CompleteOrder from "../CompleteOrder";
+import ContainerCart from "../ContainerCart";
 
 function Content() {
     return (
@@ -23,9 +26,17 @@ function Content() {
                     <Route path=':bookId' element={<BookDetail/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Route>
-                <Route path="/author" element={<DataProviderOfLibrary><Author/></DataProviderOfLibrary>}/>
+                <Route path="/author" element={<DataProviderOfLibrary><ContainerAuthor/></DataProviderOfLibrary>}>
+                    <Route index element={<Author/>}/>
+                    <Route path=':authorId' element={<AuthorDetail/>}/>
+                    <Route path="*" element={<NotFound/>}/>
+                </Route>
                 <Route path="/like" element={<Like/>}/>
-                <Route path="/cart" element={<Cart/>}/>
+                <Route path="/cart" element={<ContainerCart/>}>
+                    <Route index element={<Cart/>}/>
+                    <Route path='complete-order' element={<CompleteOrder/>}/>
+                    <Route path="*" element={<NotFound/>}/>
+                </Route>
                 <Route path="/order" element={<Order/>}/>
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/author-detail" element={<AuthorDetail/>}/>

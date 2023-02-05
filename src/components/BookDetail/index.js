@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { DataContextOfLibrary } from "../Library/DataContextOfLibrary";
+import { DataContext } from "../DataStore";
 import { useContext } from "react";
 import DetailBox from "./DetailBox";
 import "./index.css"
@@ -9,10 +9,10 @@ import Rate from "./Rate";
 
 function BookDetail () {
 
-    const dataStore = useContext(DataContextOfLibrary);
-    const { bookId } = useParams()
+    const dataStore = useContext(DataContext);
+    const { bookId } = useParams();
 
-    const book = dataStore.dataBooks.find(book => book.id.toString() === bookId )
+    const book = dataStore.getBookById(bookId);
 
     return (
         <div className="container__content">
@@ -32,7 +32,6 @@ function BookDetail () {
                                 <Rate userName={"Ka Ka"} star={3} rateContent={"Sách rất hay và bổ ích ^^"} dateRate={"11/04/2022"}/>           
                                 <Rate userName={"Người dùng nào đó"} star={4} rateContent={"Sách rất hay và bổ ích ^^"} dateRate={"11/04/2022"}/>
                             </div>
-                            
                         </div>
                     </div>
                     <div className="authorDetail__content__right">

@@ -13,15 +13,37 @@ function MainBox(props) {
     const DataStore = useContext(DataContext);
 
     const handleAddToCart = (id) => {
-        const newCart = [
-            {
-                id,
-                counter: 1
-            },
-            ...DataStore.cart
-        ]
 
-        DataStore.setCart(Array.from(new Set(newCart)));
+        const checkBookInCart = DataStore.isInCart(id);
+        if(checkBookInCart===false) 
+        {
+            const book = DataStore.getBookById(id);
+            const newCart = [
+                {
+                    id,
+                    counter: 1,
+                    toMoney: book.newPrice,
+                    selected: false
+                },
+                ...DataStore.cart
+            ]
+
+            DataStore.setCart(Array.from(new Set(newCart)));
+        } else {
+            const cartWithoutThisBook = DataStore.cart.filter(item => item.id !== id);
+
+            const newCart = [
+                {
+                    id,
+                    counter: checkBookInCart + 1,
+                    toMoney: book.newPrice * (checkBookInCart + 1),
+                    selected: false
+                },
+                ...cartWithoutThisBook
+            ]
+
+            DataStore.setCart(Array.from(new Set(newCart)));
+        }
     }
 
     const handleAddTolikeList = (id) => {

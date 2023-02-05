@@ -1,0 +1,122 @@
+.Contact{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.Contact__top{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.Contact__top > img{
+    display: block;
+    width: 50%;
+}
+
+.Contact__top__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Contact__top__left h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.Contact__top__left h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0 10px 0;
+}
+
+.Contact__top__left h3 > a{
+    text-decoration: none;
+    color: #7F00FF;
+    font-weight: 800;
+}
+
+.Contact__socialMedia{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 20px;
+    width: 320px;
+}
+
+.Contact__socialMedia__item{
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 10px 20px;
+    column-gap: 5px;
+}
+
+.Contact__socialMedia__item > img{
+    display: block;
+    width: 25px;
+}
+
+.Contact__socialMedia__item > span{
+    color: black;
+    font-weight: 600;
+}
+
+.Contact__bottom{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.Contact__bottom > img{
+    display: block;
+    width: 15%;
+}
+
+.Contact__bottom__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Contact__bottom__content > div{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+}   
+
+.Contact__bottom__content > div > input{
+    outline: none;
+    height: 40px;
+    font-family: "quicksand";
+    border-radius: 10px;
+    border: 1px solid #636363;
+    padding: 0 15px;
+    font-weight: 600;
+    width: 100%;
+    font-size: 16px;
+}
+
+.Contact__bottom__content > div > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+    background: linear-gradient(76.73deg, #7F00FF -14.37%, #E100FF 125.55%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: "quicksand";
+    font-weight: 800;
+}

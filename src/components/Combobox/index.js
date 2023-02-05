@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./combobox.css"
 
 function Combobox (props) {
-    const {children, dataSource, handleChange} = props
+    const {children, dataSource, handleChange} = props;
 
     const [activeCbb, setActiveCbb] = useState(false);
 

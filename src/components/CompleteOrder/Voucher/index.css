@@ -1,0 +1,39 @@
+.Voucher{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 25px 20px 25px;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    row-gap: 15px;
+}
+
+.Voucher__top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CACACA;
+    padding: 3px 5px;
+}
+
+.Voucher__top > input{
+    font-family: "quicksand";
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 90%;
+    height: 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.Voucher__top > ion-icon{
+    font-size: 20px;
+}
+
+.Voucher__bottom > span{
+    font-size: 16px;
+    font-weight: 500;
+}

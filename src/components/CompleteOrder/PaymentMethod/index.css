@@ -1,0 +1,30 @@
+.PaymentMethod{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 30px;
+    row-gap: 15px;
+}
+
+.PaymentMethod__item{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.PaymentMethod__item > input{
+    accent-color: #7F00FF;
+}
+
+.PaymentMethod__item > label{
+    display: flex;
+    column-gap: 7px;
+    font-weight: 600;
+}
+
+.PaymentMethod__item > label > img{
+    display: block;
+    width: 20px;
+}

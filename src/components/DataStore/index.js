@@ -13,6 +13,8 @@ function DataStore({children}) {
     // Dữ liệu sách trong giỏ hàng
     const [cart, setCart] = useState([]);
 
+    const [selectedAll, setSelectedAll] = useState(false);
+
     // Dữ liệu sách trong danh sách yêu thích
     const [likeList, setLikeList] = useState([])
 
@@ -21,6 +23,9 @@ function DataStore({children}) {
     
     // Dữ liệu tất cả các tác giả
     const [authors, setAuthors] = useState([])
+
+    // Dữ liệu các tác giả đang follow
+    const [following, setFollowing] = useState([])
 
     // Call API
     useEffect(() => {
@@ -35,13 +40,19 @@ function DataStore({children}) {
 
     const getBookById = (id) => {
         return (
-            dataBooks.find((item) => item.id === id)
+            dataBooks.find((item) => item.id.toString() === id.toString())
+        )
+    }
+
+    const getAuthorById = (id) => {
+        return (
+            authors.find((item) => item.id.toString() === id.toString())
         )
     }
 
     const isInCart = (id) => {
         const book = cart.find((item) => item.id === id)
-        return book ? true : false;
+        return book ? book.counter : false;
     }
 
     const isInLikeList = (id) => {
@@ -49,9 +60,61 @@ function DataStore({children}) {
         return book ? true : false;
     }
 
+    const isInFollowing = (id) => {
+        const author = following.find(item => item === id);
+        return author ? true : false;
+    }
+
+    const addFollowing = (id) => {
+        const newFollowing = [
+            id,
+            ...following
+        ]
+        setFollowing(Array.from(new Set(newFollowing)));
+    }
+
+    const unFollowing = (id) => {
+        const newFollowing = following.filter(item => item !== id);
+
+        setFollowing(Array.from(new Set(newFollowing)));
+    }
+
     const getCountBookByAuthorName = (_authorName) => {
         const count = dataBooks.filter((item) => item.authorName === _authorName);
         return count ? count.length : 0;
+    }
+
+    const getPayFromCart = () => {
+        let pay = 0;
+        cart.map(item => pay += item.toMoney)
+        return pay;
+    }
+
+    const getSelectedFromCart = () => {
+        let count = 0;
+        cart.map(item => count += item.selected)
+        return count;
+    }
+
+    const selectAllCart = () => {
+        const newCart = cart.map(item => {
+            item.selected = true
+            return item;
+        })
+        setCart(newCart)
+    }
+
+    const unselectAllCart = () => {
+        const newCart = cart.map(item => {
+            item.selected = false
+            return item;
+        })
+        setCart(newCart)
+    }
+    
+    const handleChageSelect = () => {
+        selectedAll ? unselectAllCart() : selectAllCart();
+        setSelectedAll(!selectedAll);
     }
 
     const navData = [
@@ -112,7 +175,17 @@ function DataStore({children}) {
         authors, setAuthors,
         isInCart,
         isInLikeList,
-        getCountBookByAuthorName
+        getCountBookByAuthorName,
+        getPayFromCart, 
+        following, setFollowing,
+        getAuthorById,
+        isInFollowing,
+        addFollowing, unFollowing,
+        getSelectedFromCart,
+        selectAllCart,
+        unselectAllCart,
+        handleChageSelect,
+        selectedAll, setSelectedAll
     }
 
     return (

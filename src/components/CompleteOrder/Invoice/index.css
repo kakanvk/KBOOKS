@@ -1,0 +1,40 @@
+.Invoice{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 30px;
+    row-gap: 20px;
+}
+
+.Invoice--top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 20px;
+}
+
+.Invoice__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.Invoice__item > h3{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.Invoice__item > span{
+    color: #636363;
+    font-weight: 500;
+}
+
+.Invoice--bottom{
+    display: block;
+    width: 100%;
+    border-top: 1px solid #CACACA;
+    padding-top: 20px;
+}

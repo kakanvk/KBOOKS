@@ -16,21 +16,22 @@ function AuthorItem(props) {
 
     return (
         <div className="authorItem">
-            <div className="authorItem__img">
-                <img src={data.linkAuthorAvt} alt="Morgan Housel" />
-            </div>
-            <div className="authorItem__content">
-                <h2>{data.authorName}</h2>
-                <div>
-                    <span>{data.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} người theo dõi</span>
-                    <span>|</span>
-                    <span>{countBook} tác phẩm trên KBOOKS</span>
+            <Link to={`/author/${data.id}`}>
+                <div className="authorItem__img">
+                    <img src={data.linkAuthorAvt} alt="Morgan Housel" />
                 </div>
-                <Link to={`/${data.authorName}`} style={linkStyle}>Xem thông tin</Link>
-            </div>
-            <OptionBox/>
+                <div className="authorItem__content">
+                    <h2>{data.authorName}</h2>
+                    <div>
+                        <span>{data.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} người theo dõi</span>
+                        <span>|</span>
+                        <span>{countBook} tác phẩm trên KBOOKS</span>
+                    </div>
+                    <span style={linkStyle}>Xem thông tin</span>
+                </div>
+            </Link>
+            <OptionBox authorId={data.id}/>
         </div>
-
     )
 }
 

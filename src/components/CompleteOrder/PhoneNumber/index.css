@@ -1,0 +1,22 @@
+.PhoneNumber{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 30px;
+    row-gap: 7px;
+}
+
+.PhoneNumber > h3{
+    font-size: 18px;
+}
+
+.PhoneNumber > input{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "quicksand";
+    outline: none;
+    border: none;
+    background-color: transparent;
+}

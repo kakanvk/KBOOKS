@@ -1,4 +1,5 @@
 import MiniBookBox from "./MiniBookBox";
+import { Link } from "react-router-dom";
 import { DataContext } from "../DataStore";
 import { useEffect, useContext } from "react";
 import "./index.css"
@@ -18,6 +19,11 @@ function Cart() {
         const newcart = DataStore.cart.filter(item => item.id !== id);
         DataStore.setCart(newcart);
     }
+
+    const handleChageSelect = () => {
+        DataStore.handleChageSelect();
+        navigate('/cart');
+    } 
 
     return (
         <div className="container__content__2">
@@ -43,7 +49,7 @@ function Cart() {
                         DataStore.cart.map((item, index) => {
                             const book = DataStore.getBookById(item.id);
                             return(
-                                <MiniBookBox key={index} data={book} deleteCartById={deleteCartById}/>
+                                <MiniBookBox key={index} data={book} deleteCartById={deleteCartById} dataInCart={item}/>
                             )
                         }) : 
                         <div className="FilterNotFound">
@@ -55,18 +61,21 @@ function Cart() {
             </div>
             <div className="cart__pay">
                 <div className="cart__pay__left">
-                    <span>Đã chọn 3 sản phẩm</span>
-                    <div>
-                        <input type="checkbox" id="selectAll_checkbox" />
+                    <span>Đã chọn {DataStore.getSelectedFromCart()} sản phẩm</span>
+                    <div >
+                        <input type="checkbox" id="selectAll_checkbox" 
+                            defaultChecked={DataStore.selectedAll}
+                            onChange={() => handleChageSelect()}
+                        />
                         <label htmlFor="selectAll_checkbox">Chọn tất cả</label>
                     </div>
                 </div>
                 <div className="cart__pay__right">
                     <div>
-                        <span className="cart__pay__right_s1">Tổng thanh toán:</span>
-                        <span className="cart__pay__right_s2">299.000đ</span>
+                        <span className="cart__pay__right_s1">Tổng đơn hàng:</span>
+                        <span className="cart__pay__right_s2">{DataStore.getPayFromCart().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}đ</span>
                     </div>
-                    <button><span>Đặt hàng</span><ion-icon name="arrow-forward-outline"></ion-icon></button>
+                    <Link to="complete-order"><span>Đặt hàng</span><ion-icon name="arrow-forward-outline"></ion-icon></Link>
                 </div>
             </div>
         </div>

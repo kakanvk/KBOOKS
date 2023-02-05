@@ -1,0 +1,76 @@
+.OrderItem{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.OrderItem__book{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    width: 40%;
+}
+
+.OrderItem__book > h3{
+    font-size: 18px;
+}
+
+.OrderItem__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 60px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.OrderItem__img > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.OrderItem__buyDate, .OrderItem__toMoney, .Order__status{
+    display: flex;
+    justify-content: center;
+    min-width: 110px;
+}
+
+.OrderItem__buyDate{
+    font-weight: 600;
+}
+
+.OrderItem__toMoney{
+    font-weight: 700;
+    color: #7F00FF;
+}
+
+.Order__status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.Order__status > span{
+    font-weight: 500;
+}
+
+.stt__pending{
+    color: #FF9900;
+}
+
+.stt__cancel{
+    color: red;
+}
+
+.stt__complete{
+    color: #00A607;
+}

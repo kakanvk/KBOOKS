@@ -24,7 +24,7 @@ function DetailBox (props) {
             </div>
             <div className="detail__item">
                 <h4>Khác</h4>
-                <span>{other}</span>
+                <span style={{textAlign: "justify"}}>{other}</span>
             </div>
         </div>
     )
