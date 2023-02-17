@@ -35,15 +35,15 @@ function Library() {
             <div className="grid container_book_library">
                 <div className="row">
                     {
-                        dataFiltered.length!==0 ? dataFiltered.map((item, index) => {
+                        dataFiltered.length !== 0 ? dataFiltered.map((item, index) => {
                             return (
                                 <Book data={item} key={index} />
                             )
-                        }) : 
-                        <div className="FilterNotFound">
-                            <ion-icon name="close-circle"></ion-icon>
-                            <span>Không tìm thấy kết quả phù hợp.</span>
-                        </div>
+                        }) :
+                            <div className="FilterNotFound">
+                                <ion-icon name="close-circle"></ion-icon>
+                                <span>Không tìm thấy kết quả phù hợp.</span>
+                            </div>
                     }
                 </div>
             </div>

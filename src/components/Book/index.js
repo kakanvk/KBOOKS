@@ -5,8 +5,10 @@ import "./book.css"
 function Book(props) {
     const data = props.data;
 
+    const classN = props.classN ? props.classN : "col l-3 m-4 c-12";
+
     return (
-        <div className="col l-3 m-4 c-6">
+        <div className={classN}>
             <Link
                 to={`/library/${data.id}`}
                 style={

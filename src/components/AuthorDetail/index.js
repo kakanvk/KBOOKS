@@ -5,6 +5,7 @@ import AuthorMainBox from "./AuthorMainBox";
 import { useParams } from "react-router-dom";
 import { DataContext } from "../DataStore";
 import { useContext } from "react";
+import Book from "../Book";
 
 function AuthorDetail () {
 
@@ -13,6 +14,8 @@ function AuthorDetail () {
     const { authorId } = useParams()
 
     const author = dataStore.getAuthorById(authorId);
+
+    const books = author && dataStore.getBooksByAuthorName(author.authorName);
 
     return(
         <div className="container__content">
@@ -26,6 +29,15 @@ function AuthorDetail () {
                         </div>
                         <div>
                             <h2>Tác phẩm nổi bật</h2>
+                            <div className="tpnb row">
+                                {
+                                    books && books.map((item, index) => {
+                                        return (
+                                            <Book key={index} data={item} classN="col l-4 m-6 c-12"/>
+                                        )
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
                     <div className="authorDetail__content__right">

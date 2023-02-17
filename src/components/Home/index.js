@@ -16,11 +16,11 @@ function Home() {
     })
 
     useEffect(() => {
-        fetch("https://kbooks-api.glitch.me/best-seller")
+        fetch("https://api.kakanie.com/bestSeller")
         .then((res) => res.json())
         .then((res) => setBestSeller(res));
 
-        fetch("https://kbooks-api.glitch.me/propose")
+        fetch("https://api.kakanie.com/propose")
         .then((res) => res.json())
         .then((res) => setPropose(res));
     }, [])

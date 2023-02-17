@@ -3,3 +3,11 @@
     align-items: flex-start;
     column-gap: 20px;
 }
+
+.tpnb{
+    display: inline-block;
+}
+
+.tpnb > * {
+    flex-grow: 1;
+}

@@ -4,8 +4,17 @@ import mailImg from "../../asset/imgs/mail.svg"
 import ggIcon from "../../asset/imgs/login/Google.png"
 import fbIcon from "../../asset/imgs/login/Facebook.png"
 import { Link } from 'react-router-dom';
+import { useContext, useEffect } from 'react'
+import { DataContext } from '../DataStore'
 
 function Contact(){
+
+    const DataStore = useContext(DataContext);
+
+    useEffect(() => {
+        DataStore.setNavSelected(4);
+    })
+
     return(
         <div className="container__content ">
             <div className='Contact'>

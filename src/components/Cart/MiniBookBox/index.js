@@ -9,7 +9,7 @@ function MiniBookBox(props) {
     return (
         <div className="MiniBookBox">
             <div className="MiniBookBox__left">
-                <input type="checkbox" defaultChecked={dataInCart.selected}/>
+                <input type="checkbox" checked={dataInCart.selected}/>
                 <MiniBook miniBookData={data}/>
             </div>
             <div className="MiniBookBox__right">

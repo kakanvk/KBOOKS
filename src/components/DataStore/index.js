@@ -29,11 +29,11 @@ function DataStore({children}) {
 
     // Call API
     useEffect(() => {
-        fetch("https://kbooks-api.glitch.me/books")
+        fetch("https://api.kakanie.com/books")
         .then((res) => res.json())
         .then((res) => setDataBooks(res));
 
-        fetch("https://kbooks-api.glitch.me/authors")
+        fetch("https://api.kakanie.com/authors")
         .then((res) => res.json())
         .then((res) => setAuthors(res));
     }, [])
@@ -47,6 +47,19 @@ function DataStore({children}) {
     const getAuthorById = (id) => {
         return (
             authors.find((item) => item.id.toString() === id.toString())
+        )
+    }
+
+    const getAuthorByName = (authorName) => {
+        const author = authors.find((item) => item.authorName.toString() === authorName.toString())
+        return (
+            author===undefined ? 0 : author
+        )
+    }
+
+    const getBooksByAuthorName = (authorName) => {
+        return (
+            dataBooks.filter((item) => item.authorName === authorName)
         )
     }
 
@@ -86,7 +99,7 @@ function DataStore({children}) {
 
     const getPayFromCart = () => {
         let pay = 0;
-        cart.map(item => pay += item.toMoney)
+        cart.map(item => item.selected ? pay += item.toMoney : "")
         return pay;
     }
 
@@ -115,6 +128,13 @@ function DataStore({children}) {
     const handleChageSelect = () => {
         selectedAll ? unselectAllCart() : selectAllCart();
         setSelectedAll(!selectedAll);
+    }
+
+    const changeSelectById = (id) => {
+        const cartIndex = cart.findIndex(item => item.id === id);
+        let newCart = cart;
+        newCart[cartIndex].selected = !cart[cartIndex].selected;
+        setCart(newCart)
     }
 
     const navData = [
@@ -185,7 +205,10 @@ function DataStore({children}) {
         selectAllCart,
         unselectAllCart,
         handleChageSelect,
-        selectedAll, setSelectedAll
+        selectedAll, setSelectedAll,
+        changeSelectById,
+        getBooksByAuthorName,
+        getAuthorByName
     }
 
     return (

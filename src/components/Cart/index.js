@@ -6,12 +6,11 @@ import "./index.css"
 import { useNavigate } from "react-router-dom";
 
 function Cart() {
-
     const navigate = useNavigate();
     const DataStore = useContext(DataContext);
 
     useEffect(() => {
-        if(DataStore.isLogin===false) navigate('/login'); 
+        if (DataStore.isLogin === false) navigate('/login');
         DataStore.setNavSelected(6);
     })
 
@@ -20,10 +19,9 @@ function Cart() {
         DataStore.setCart(newcart);
     }
 
-    const handleChageSelect = () => {
+    const handleChageSelectAll = () => {
         DataStore.handleChageSelect();
-        navigate('/cart');
-    } 
+    }
 
     return (
         <div className="container__content__2">
@@ -35,7 +33,7 @@ function Cart() {
                 <div className="container__book">
                     <div className="container__book__label" >
                         <div className="MiniBookBox__left">
-                            <input type="checkbox" />
+                            <input type="checkbox" checked={DataStore.selectedAll} onChange={() => handleChageSelectAll()}/>
                             <span>Tác phẩm</span>
                         </div>
                         <div className="MiniBookBox__right">
@@ -46,16 +44,16 @@ function Cart() {
                     </div>
                     {
                         DataStore.cart.length !== 0 ?
-                        DataStore.cart.map((item, index) => {
-                            const book = DataStore.getBookById(item.id);
-                            return(
-                                <MiniBookBox key={index} data={book} deleteCartById={deleteCartById} dataInCart={item}/>
-                            )
-                        }) : 
-                        <div className="FilterNotFound">
-                            <ion-icon name="close-circle"></ion-icon>
-                        <span>Chưa có sản phẩm nào trong giỏ hàng.</span>
-                    </div>
+                            DataStore.cart.map((item, index) => {
+                                const book = DataStore.getBookById(item.id);
+                                return (
+                                    <MiniBookBox key={item.id} data={book} deleteCartById={deleteCartById} dataInCart={item} />
+                                )
+                            }) :
+                            <div className="FilterNotFound">
+                                <ion-icon name="close-circle"></ion-icon>
+                                <span>Chưa có sản phẩm nào trong giỏ hàng.</span>
+                            </div>
                     }
                 </div>
             </div>
@@ -63,9 +61,9 @@ function Cart() {
                 <div className="cart__pay__left">
                     <span>Đã chọn {DataStore.getSelectedFromCart()} sản phẩm</span>
                     <div >
-                        <input type="checkbox" id="selectAll_checkbox" 
-                            defaultChecked={DataStore.selectedAll}
-                            onChange={() => handleChageSelect()}
+                        <input type="checkbox" id="selectAll_checkbox"
+                            checked={DataStore.selectedAll}
+                            onChange={() => handleChageSelectAll()}
                         />
                         <label htmlFor="selectAll_checkbox">Chọn tất cả</label>
                     </div>

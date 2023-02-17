@@ -56,7 +56,7 @@ function MainBox(props) {
 
         DataStore.setLikeList(Array.from(new Set(newLikeList)));
     }
-
+    
     return (
         <div className="BookDetail__mainBox">
             <div className="BookDetail__mainBox__left">
@@ -64,7 +64,7 @@ function MainBox(props) {
             </div>
             <div className="BookDetail__mainBox__right">
                 <div className="mainBox__right__info">
-                    <Link to={`/author/${book.authorName}`}>{book.authorName}</Link>
+                    <Link to={`/author/${DataStore.getAuthorByName(book.authorName).id}`}>{book.authorName}</Link>
                     <span>{book.bookName}</span>
                 </div>
                 <StarRate number={book.star} />

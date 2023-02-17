@@ -9,7 +9,7 @@ function DataProviderOfLibrary({children}) {
     
     // Call API
     useEffect(() => {
-        fetch("https://kbooks-api.glitch.me/books")
+        fetch("https://api.kakanie.com/books")
         .then((res) => res.json())
         .then((res) => setDataBooks(res));
     }, [])
